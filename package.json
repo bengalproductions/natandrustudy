@@ -1,0 +1,23 @@
+{
+  "name": "natandrustudy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildcss": "postcss public/styles/styles.css -o public/styles/build.min.css"
+  },
+  "author": "Eddie Coldrick of Bengal Productions",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "cssnano": "^5.0.15",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^2.2.19",
+    "deta": "0.0.12",
+    "dotenv": "^10.0.0"
+  }
+}
