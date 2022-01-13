@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fzff82+8pzHnwA1mQ0dzz9/E0B+ZRizq08yZfya66INZBz86qKTCt9MLU0NCNIgaMJCgeyhujhasnFUsYMsi0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <!-- GDPR-compliant, cookie-free analytics -->
-    <script data-goatcounter="yourgoatcounterurl" async src="//gc.zgo.at/count.js"></script> <!-- replace with your goat counter URL -->
+    <script data-goatcounter="https://nas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> //replace with your goat counter url
 </head>
 <body>
     <div class="p-3">
@@ -21,7 +21,19 @@
         <div class="pt-3">
             <p>View the specification on the <a class="text-blue-500 no-underline hover:underline" href="https://qualifications.pearson.com/en/qualifications/edexcel-gcses/history-2016.html">Edexcel website</a></p>
             <p class="pt-1"><strong><i>Revision Notes:</i></strong></p>
-            <p class="pt-1"><i>There are no notes available for this subject at the moment... Check back later!</i></p>
+            <%if(topics.length > 0){
+                topics.forEach((element2)=>{%>
+                    <p class="underline"><%var words = element2.topic.split("-")
+                        var words2 = words.map((word) => { 
+                        return word[0].toUpperCase() + word.substring(1); 
+                    }).join(" ");%><%=words2%></p>
+                    <%element2.notes.forEach((element)=>{%>
+                        <p><a href="/notes/<%=element.slug%>" class="text-blue-500 no-underline hover:underline"><%=element.title%></a></p>
+                    <%})%>
+                    <%})%>
+                <%}else{%>
+                    <p class="pt-1"><i>There are no notes available for this subject at the moment... Check back later!</i></p>
+                    <%}%>
         </div>
     </div>
         
