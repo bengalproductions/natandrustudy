@@ -1,5 +1,5 @@
 # natandrustudy
-Copyright (C) 2021 Bengal Productions, reproducible under GNU3 license.
+Copyright (C) 2022 Bengal Productions, reproducible under GNU3 license.
 
 To use, make a project on [Deta](https://deta.sh) and an API key on [Short.io](https://short.io) and then, create .env file with contents:
 ```
