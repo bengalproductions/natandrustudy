@@ -1,6 +1,7 @@
 # natandrustudy
 Copyright (C) 2022 Bengal Productions, reproducible under GNU3 license.
 
+___
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
@@ -14,6 +15,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+___
 This repo isn't automatically connected to the site, so is usually behind by a lot until I find the time to update it.
 
 To use, make a project on [Deta](https://deta.sh) and an API key on [Short.io](https://short.io) and then, create .env file with contents:
