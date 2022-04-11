@@ -1,5 +1,5 @@
 # natandrustudy
-Copyright (C) 2022 Bengal Productions, reproducible under GNU3 license.
+Copyright (C) 2022 PI4LI, reproducible under GNU3 license.
 
 ___
 This program is free software: you can redistribute it and/or modify
